@@ -1,0 +1,33 @@
+version: '3.8'
+
+services:
+  db:
+    image: postgres:13
+    environment:
+      - POSTGRES_DB=notesdb
+      - POSTGRES_USER=notesuser
+      - POSTGRES_PASSWORD=notespwd123
+    volumes:
+      - postgres_data:/var/lib/postgresql/data/
+    ports:
+      - "5432:5432"
+
+  web:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    command: bash -c "sleep 5 && python manage.py makemigrations && python manage.py migrate && python manage.py runserver 0.0.0.0:8000"
+    volumes:
+      - .:/app
+    ports:
+      - "8000:8000"
+    environment:
+      - DATABASE_URL=postgres://notesuser:notespwd123@db:5432/notesdb
+      - DEBUG=1  # Enable debug mode for development
+    depends_on:
+      - db
+    stdin_open: true  # For interactive console
+    tty: true         # For interactive console
+
+volumes:
+  postgres_data:

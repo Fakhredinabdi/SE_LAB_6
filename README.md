@@ -1,6 +1,22 @@
 ## SE_LAB_6
 ### 99106458_99101921
 
+ایجاد user1 و سپس ایجاد یادداشت با user1 و سپس مشاهده‌ی هر ۲ یادداشت که نشان ‌می‌دهد دیتابیس به درستی کار می‌کند.
+![1](https://github.com/user-attachments/assets/f1c14d82-719b-4300-ae26-209022411084)
+![2](https://github.com/user-attachments/assets/18a574dd-080c-4874-8631-37b5023b858b)
+![3](https://github.com/user-attachments/assets/ee4a9c0b-4637-4985-ae38-1afea1569f85)
+![4](https://github.com/user-attachments/assets/e567e508-d8f5-4b2a-91f9-7966b93b4744)
+![5](https://github.com/user-attachments/assets/046f2592-8545-440b-b3fa-ae65c7f3cfb1)
+![6](https://github.com/user-attachments/assets/a05c65a0-9211-4286-8bb3-6e6a262ff97b)
+
+
+به کمک دستورهای docker images و docker ps می‌توانیم لیست ایمیج ها و کانتینرهای موجود را ببینیم.
+![11](https://github.com/user-attachments/assets/897420ae-ac0e-4ad0-b646-9f0d6ee51616)
+![12](https://github.com/user-attachments/assets/399119e1-3b57-42f5-b152-ccb09d02241d)
+
+همانطور که در تصویر زیر هم مشخص است با دستور docker exec -it وارد کانتینر وب سرویس شده ایم و یوزر admin را در آن با استفاده از کامند مشخص شده می‌سازیم.
+![10](https://github.com/user-attachments/assets/72ebeb8f-2a0e-4edb-b80f-a01babfce50a)
+
 <div dir="rtl" align="right">
 
 # پاسخ سوالات
